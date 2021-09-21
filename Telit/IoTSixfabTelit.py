@@ -230,7 +230,7 @@ class IoT():
         return self.sendATComm("AT+QCFG=\"band\"", "OK\r\n")
         # Telit
         # AT#BND?
-        Read command returns the current selected band in the format:
+        # Read command returns the current selected band in the format:
         #BND: <band>,<UMTS_band>,<LTE_band>
 
     def setScrambleConf(self, scramble):
