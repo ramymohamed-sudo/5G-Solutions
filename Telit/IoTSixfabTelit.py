@@ -82,7 +82,7 @@ class IoT():
     def __init__(self):
         # maha maha why self. and no self.
         self.board = "Sixfab Raspberry Pi Cellular IoT Application Shield"
-        ser.port = "/dev/ttyUSB2"  # "/dev/ttyS0" to "/dev/ttyUSB2" for Telit
+        ser.port = "/dev/ttyS0"  # "/dev/ttyS0" to "/dev/ttyUSB2" for Telit
         ser.baudrate = 115200
         ser.parity = serial.PARITY_NONE
         ser.stopbits = serial.STOPBITS_ONE

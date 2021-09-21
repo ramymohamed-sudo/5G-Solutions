@@ -10,6 +10,7 @@ node = IoTSixfabTelit.IoT()
 node.setupGPIO()    # channel is already in use
 node.enable()
 # node.disable()
+node.sendATComm("AT#BND=?","OK")
 
 
 # node.getBandConfiguration()
