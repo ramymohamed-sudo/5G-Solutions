@@ -82,7 +82,7 @@ class IoT():
     def __init__(self):
         # maha maha why self. and no self.
         self.board = "Sixfab Raspberry Pi Cellular IoT Application Shield"
-        ser.port = "/dev/ttyS0"  # "/dev/ttyS0" to "/dev/ttyUSB2" for Telit
+        ser.port = "/dev/ttyUSB2"  # "/dev/ttyS0" to "/dev/ttyUSB2" for Telit
         ser.baudrate = 115200
         ser.parity = serial.PARITY_NONE
         ser.stopbits = serial.STOPBITS_ONE
@@ -112,7 +112,7 @@ class IoT():
         # Function for enable BG96 module
     def enable(self):
         GPIO.output(self.BG96_ENABLE, 1)
-        debug_print("BG96 module enabled!")
+        debug_print("Telit module enabled!")    # BG96
 
         # Function for powering down BG96 moduleand all peripherals from voltage regulator
     def disable(self):

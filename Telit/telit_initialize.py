@@ -10,7 +10,10 @@ node = IoTSixfabTelit.IoT()
 node.setupGPIO()    # channel is already in use
 node.enable()
 # node.disable()
+print("Check the configured bandwidth")
 node.sendATComm("AT#BND=?","OK")
+# node.sendATComm("AT#BND=?","OK\r\n")
+
 
 
 # node.getBandConfiguration()
