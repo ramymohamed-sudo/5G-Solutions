@@ -226,10 +226,9 @@ class IoT():
 
 #  *********************************************************************************************
 
-    def getBandConfiguration(self):     # page 139
-        return self.sendATComm("AT+QCFG=\"band\"", "OK\r\n")
-        # Telit
-        # AT#BND?
+    def getBandConfiguration(self):    
+        # return self.sendATComm("AT#BND=?","OK")
+        return self.sendATComm("AT#BND?","OK")
         # Read command returns the current selected band in the format:
         #BND: <band>,<UMTS_band>,<LTE_band>
 

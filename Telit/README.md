@@ -34,3 +34,12 @@ node.sendATComm("AT#BND=?","OK")
 <br />
 node.disable()
 
+
+VIP: for the mqtt codes and databases
+In the python script for each sensor:
+0- Install/configure the batteries (linux commands)
+1- run the python code/method for the battery level, etc
+2- change the sensors hostnames to pi01 to pi08
+3- make use of these names (envirnoment variables when send data via the publisher code)
+4- Once this is completed for one sensor - put everything on github and just use git clone
+
